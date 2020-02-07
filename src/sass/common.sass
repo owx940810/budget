@@ -1,0 +1,56 @@
+@import 'variables'
+@import 'mixins'
+
+*, *::before, *::after
+    box-sizing: border-box
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    -webkit-tap-highlight-color: transparent
+
+input, input:before, input:after
+  -webkit-user-select: initial
+  -khtml-user-select: initial
+  -moz-user-select: initial
+  -ms-user-select: initial
+  user-select: initial
+
+html
+    height: 100%
+
+body
+    margin: 0
+    font-family: 'Avenir', Helvetica, Arial, sans-serif
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    background-color: $blue
+    color: white
+    height: 100%
+
+h1, h2, h3, h4, h5, h6, p
+    line-height: 1
+    margin: 0
+
+h1
+    font-size: 48px
+
+h2
+    font-size: 42px
+
+h3
+    font-size: 36px
+
+h4
+    font-size: 30px
+
+h5
+    font-size: 22px
+
+a, a:link, a:hover, a:active
+    color: inherit
+
+img
+    max-width: 100%
